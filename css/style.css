@@ -161,3 +161,31 @@ button {
     text-align: center;
     padding-top: 20px;
 }
+
+/* delete button product */
+
+.delete-product {
+    cursor: pointer;
+}
+
+/*CarritoCounter */
+
+.cantidad-carrito {
+    background-color: red;
+    color: white;
+    border-radius:  50%;
+    font-size: 12px;
+    padding: 4px;
+    top: 26px;
+    right: 2px;
+    position: absolute;
+    display: none;
+}
+
+.sumar {
+    cursor: pointer;
+}
+
+.restar {
+    cursor: pointer;
+}
