@@ -1,3 +1,10 @@
+Swal.fire({
+    title: 'Bienvenido a AppleStore',
+    text: 'Acontinuación veras todos nuestros productos',
+    confirmButtonText: 'Continuar'
+});
+
+
 const contenido = document.getElementById("contentApple");
 const verCarrito = document.getElementById("verCarrito");
 const modalContainer = document.getElementById("modal-container");
@@ -5,7 +12,15 @@ const cantidadCarrito = document.getElementById("cantidadCarrito");
 
 let carrito = JSON.parse(localStorage.getItem("carrito")) ||  [];
 
-productos.forEach((product) => {
+
+fetch("./product.json")
+.then((response) => {
+    return response.json();
+
+}).then((data) => {
+    array = [].concat(productos, data);
+    
+    array.forEach((product) => {
     let content = document.createElement("div");
     content.className = "card"; 
     content.innerHTML =  `
@@ -46,6 +61,7 @@ productos.forEach((product) => {
     }
     });
 
+    });
 });
 
 
@@ -55,6 +71,5 @@ const saveLocal = () => {
 
 };
 
-// get item 
 
 

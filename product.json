@@ -1,0 +1,25 @@
+[ 
+{
+    "id": 7,
+    "nombre": "Case for IPhone 12",
+    "precio": 100,
+    "img": "case1.png",
+    "cantidad": 1
+},
+
+{
+    "id": 8,
+    "nombre": "Case for IPhone 11 Pro Max",
+    "precio": 50,
+    "img": "case2.png",
+    "cantidad": 1
+},
+
+{
+    "id": 9,
+    "nombre": "Case for IPhone 12 Pro Max", 
+    "precio": 110,
+    "img": "case3.png",
+    "cantidad": 1
+}
+]
