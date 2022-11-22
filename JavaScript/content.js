@@ -1,6 +1,6 @@
 Swal.fire({
     title: 'Bienvenido a AppleStore',
-    text: 'Acontinuación veras todos nuestros productos',
+    text: 'A continuación veras todos nuestros productos',
     confirmButtonText: 'Continuar'
 });
 
